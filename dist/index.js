@@ -1915,7 +1915,7 @@ async function run() {
 
     const { owner, repo } = context.repo;
 
-    if (!body.startsWith(trigger)) {
+    if (!body || !body.startsWith(trigger)) {
         core.setOutput("triggered", "false");
         return;
     }

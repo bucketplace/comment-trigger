@@ -1,5 +1,5 @@
 {
-  "name": "pull-request-comment-trigger",
+  "name": "comment-trigger",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaredly/actions-testbed.git"
+    "url": "git+https://github.com/bucketplace/comment-trigger.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jaredly/actions-testbed/issues"
+    "url": "https://github.com/bucketplace/comment-trigger/issues"
   },
-  "homepage": "https://github.com/jaredly/actions-testbed#readme",
+  "homepage": "https://github.com/bucketplace/comment-trigger#readme",
   "dependencies": {
     "@actions/core": "^1.2.0",
     "@actions/github": "^1.1.0",
