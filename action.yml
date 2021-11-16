@@ -1,0 +1,23 @@
+name: 'Comment Trigger'
+description: 'Look for a "trigger word" in a pull-request description or comment, so that later steps can know whether or not to run.'
+inputs:
+  reaction:
+    description: If set, the specified emoji "reaction" is put on the comment to indicate that the trigger was detected. For example, "rocket".
+    required: false
+    default: ""
+  trigger:
+    description: 'The string to look for in pull-request descriptions and comments. For example "#build/android"'
+    required: true
+outputs:
+  triggered:
+    description: the string 'true' if the trigger was found, otherwise the string 'false'
+  comment_body:
+    description: The comment body.
+  extra_args:
+    description: extra argument in comment body (with out trigger keyword)
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: check-circle
+  color: red
