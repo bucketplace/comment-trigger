@@ -17,6 +17,7 @@ async function run() {
         context.eventName === "issue_comment"
             ? context.payload.comment.body
             : context.payload.pull_request.body;
+    body = body.trim();
     core.setOutput("comment_body", body);
 
     if (
