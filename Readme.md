@@ -51,3 +51,4 @@ And if you specify a reaction, you have to provide the `GITHUB_TOKEN` env vbl.
 | ------ | ----------- |
 | triggered | 'true' or 'false' depending on if the trigger phrase was found. |
 | comment_body | The comment body. |
+
